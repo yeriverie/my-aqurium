@@ -16,6 +16,9 @@
     margin: 0;
     padding: 0;
 }
+#paintCanvas {
+  touch-action: none;
+}
 
 body {
     font-family: 'Fredoka', sans-serif;
