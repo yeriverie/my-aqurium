@@ -82,6 +82,23 @@
             </div>
         </div>
     </div>
+
+    <div class="tool-controls">
+  <label for="inputMode">Draw with:</label>
+  <select id="inputMode">
+    <option value="both" selected>Hand or Cursor</option>
+    <option value="cursor">Cursor Only</option>
+    <option value="hand">Hand / Touch Only</option>
+  </select>
+
+  <label for="colorPicker">Color:</label>
+  <input type="color" id="colorPicker" value="#ff758c" />
+
+  <label for="sizePicker">Size:</label>
+  <input type="range" id="sizePicker" min="2" max="30" value="6" />
+  <span id="sizeValue">6px</span>
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
