@@ -33,7 +33,8 @@
             </div>
         </div>
     </div>
-      <!-- AQUARIUM PLAY PAGE SECTION -->
+
+    <!-- AQUARIUM PLAY PAGE SECTION -->
     <div id="aquarium-page" class="page-section">
         <div class="header-container">
             <h1>✨ Dream sea ✨</h1>
@@ -71,32 +72,33 @@
             </label>
         </div>
 
-        <!-- CLEANED UP: Controls Panel without Creator Checkbox Toggle -->
+        <!-- Controls Panel -->
         <div class="controls-panel">
+            <div class="tool-controls">
+                <label for="inputMode">Draw with:</label>
+                <select id="inputMode">
+                    <option value="both" selected>Hand or Cursor</option>
+                    <option value="cursor">Cursor Only</option>
+                    <option value="hand">Hand / Touch Only</option>
+                </select>
+
+                <label for="colorPicker">Color:</label>
+                <input type="color" id="colorPicker" value="#ff758c" />
+
+                <label for="sizePicker">Size:</label>
+                <input type="range" id="sizePicker" min="2" max="30" value="6" />
+                <span id="sizeValue">6px</span>
+            </div>
+
             <div class="canvas-wrapper">
                 <canvas id="paintCanvas" width="180" height="180"></canvas>
             </div>
+
             <div class="button-group">
                 <button id="clearBtn" class="cute-btn btn-alt">Clear</button>
                 <button id="submitBtn" class="cute-btn">Release ✨</button>
             </div>
         </div>
-    </div>
-
-    <div class="tool-controls">
-  <label for="inputMode">Draw with:</label>
-  <select id="inputMode">
-    <option value="both" selected>Hand or Cursor</option>
-    <option value="cursor">Cursor Only</option>
-    <option value="hand">Hand / Touch Only</option>
-  </select>
-
-  <label for="colorPicker">Color:</label>
-  <input type="color" id="colorPicker" value="#ff758c" />
-
-  <label for="sizePicker">Size:</label>
-  <input type="range" id="sizePicker" min="2" max="30" value="6" />
-  <span id="sizeValue">6px</span>
     </div>
     
     <script src="app.js"></script>
