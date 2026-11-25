@@ -1,4 +1,4 @@
-@import url('googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
 
 :root {
     /* --- Reference Image Color Variables --- */
@@ -16,8 +16,9 @@
     margin: 0;
     padding: 0;
 }
+
 #paintCanvas {
-  touch-action: none;
+    touch-action: none;
 }
 
 body {
@@ -384,6 +385,52 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.02);
 }
 
+.tool-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 14px;
+    background: var(--pastel-yellow);
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--cozy-brown);
+}
+
+.tool-controls select {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--cozy-brown);
+    background: #ffffff;
+    border: 2px solid var(--pastel-pink-dark);
+    border-radius: 14px;
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.tool-controls input[type="color"] {
+    width: 34px;
+    height: 28px;
+    border: 2px solid var(--pastel-pink-dark);
+    border-radius: 10px;
+    background: #ffffff;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.tool-controls input[type="range"] {
+    accent-color: var(--pastel-pink-dark);
+    cursor: pointer;
+    width: 85px;
+}
+
+#sizeValue {
+    min-width: 34px;
+    font-weight: 600;
+}
+
 .canvas-wrapper {
     background: #ffffff;
     border: 3px solid var(--pastel-yellow);
@@ -513,4 +560,10 @@ body {
     .controls-panel {
         border-width: 2px;
     }
-}
+
+    .tool-controls {
+        padding: 8px 12px;
+        gap: 8px;
+        font-size: 0.85rem;
+    }
+    }
